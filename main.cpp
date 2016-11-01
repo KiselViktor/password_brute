@@ -5,8 +5,15 @@ using namespace std;
 
 int main()
 {
+    cout<<"##### This is a program for creating dictionaries. #####"<<endl;
+    string file_name;
+    int operator_code;
+    cout<<endl<<"Name of file: ";
+    cin>>file_name;
+    cout<<"Operator code with 8: ";
+    cin>>operator_code;
     ofstream password;
-    password.open("phone_password.txt");
+    password.open(file_name);
     int arr[7];
     int i=0;
     for(int a = 0; a < 10; a++)
@@ -41,14 +48,16 @@ int main()
                                    //3 пары по 2
                                    )
                                 {
+                                    password<<operator_code;
                                     for(int h = 0; h < 7; h++)
                                     {
                                         password<<arr[h];
                                     }
                                     password<<endl;
-                                    cout<<"Password["<<i<<"]: "<<a<<b<<c<<d<<e<<f<<g<<endl;
                                 }
                             }
+                            printf("\033[2J\033[0;0f");
+                            cout<<"Complitid: "<<i/100000<<" %"<<endl;
                         }
                     }
                 }
