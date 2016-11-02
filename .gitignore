@@ -1,6 +1,6 @@
 bin/
 obj/
-password.cbp
+password_brute.cbp
 phone_password.txt
 test.txt
 
