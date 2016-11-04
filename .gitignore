@@ -1,7 +1,9 @@
 bin/
 obj/
 password_brute.cbp
+password.cbp
 phone_password.txt
 test.txt
+password.layout
 
 
